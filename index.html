@@ -5,9 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RockPaperScissors</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <script src="javascript/game.js">
-    </script>
+    <script src="javascript/game.js" defer></script>
+    <header>
+        <h1>ROCK - PAPER - SCISSORS</h1>
+        <h3>First to 5 points wins!</h3>
+    </header>
+    <div class="game">
+        <div class="player-interface">
+            <h2><i>Player</i></h2>
+            <img id="player-weapon" src="images/question.png" alt>
+            <div class="weapons">
+                <button class="weapon" id="player-rock" value="rock">Rock</button>
+                <button class="weapon" id="player-paper" value="paper">Paper</button>
+                <button class="weapon" id="player-scissors" value="scissors">Scissors</button>
+            </div>
+        </div>
+
+        <div class="result">
+            <div class="winner">Choose your weapon!</div>
+            <div class="scores">
+                <div class="player-score">0</div>
+                <p>-</p>
+                <div class="computer-score">0</div>
+            </div>
+            <button class="restart">Restart the game</button>
+        </div>
+
+        <div class="computer-interface">
+            <h2><i>Computer</i></h2>
+            <img id="computer-weapon" src="images/question.png" alt>
+            <div class="weapons">
+                <button class="computer-weapon" id="computer-rock" value="rock">Rock</button>
+                <button class="computer-weapon" id="computer-paper" value="paper">Paper</button>
+                <button class="computer-weapon" id="computer-scissors" value="scissors">Scissors</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><a target="_blank" href="https://icons8.com/icon/37409/rock">Rock</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+        <p><a target="_blank" href="https://icons8.com/icon/65653/paper-waste">Paper Waste</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+        <p><a target="_blank" href="https://icons8.com/icon/37828/scissors">Scissors</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+    </footer>
+
 </body>
 </html>

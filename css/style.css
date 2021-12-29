@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* { 
+	box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+html, body {
+	height: 100%;
+    margin: 0;
+	background: #fff;
+	color: #000;
+}
+
+img {
+    height: 200px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(33, 180, 40, 0.055);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-top: auto;
+    font-size: 10px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    text-align: center;
+    background-color: #ffff0042;
+    width: 100%;
+}
+
+header h3 {
+    font-style: italic;
+}
+
+
+.game {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.player-interface, .computer-interface, .result {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-interface, .computer-interface {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.result {
+    align-items: stretch;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.winner {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 40px;
+    content: '';
+    font-size: 24px;
+    
+}
+
+.scores {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: -15px;
+    font-size: 100px;
+    gap: 40px;
+}
+
+.scores p {
+    margin: 0;
+}
+
+.restart {
+    margin-top: auto;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    background-color: rgba(255, 4, 4, 0.678);
+    font-size: 18px;
+    color: white;
+    font-weight: 900;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 5px 3px #8b8b8b;
+}
+
+.restart:hover {
+    box-shadow: none;
+    transition: 200ms;
+}
+
+.weapons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.weapon, .computer-weapon{
+    background-color: rgb(219, 219, 219);
+    border: none;
+    padding: 5px 20px;
+    margin: 10px 10px;
+    font-size: 16px;
+    box-shadow: 0px 3px 0px;
+    transition: 100ms;
+}
+
+.computer-weapon {
+    cursor: default;
+}
+
+.weapon:hover {
+    box-shadow: none;
+    background-color: rgb(238, 238, 238);
+}
+
+.active {
+    box-shadow: none;
+    background-color: rgb(238, 238, 238);
+    border: 3px solid #ffff00;
+}
